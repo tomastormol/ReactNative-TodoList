@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { borderBottomColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 export default styles = StyleSheet.create({
   container: {
@@ -31,7 +32,7 @@ export default styles = StyleSheet.create({
     borderRadius: 60,
     borderColor: '#C0C0C0',
     borderWidth: 1,
-    width: 250,
+    width: 290,
   },
   addWrapper:{
     width: 60,
@@ -51,7 +52,19 @@ export default styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginBottom: 20
+        marginBottom: 20,
+        borderColor: '#FF0000',
+        //borderWidth: 0.2,
+    },
+    shadow: {
+      shadowColor: "#FF0000",
+        shadowOffset: {
+          width: 0,
+          height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
     },
     itemLeft: {
         flexDirection: 'row',
